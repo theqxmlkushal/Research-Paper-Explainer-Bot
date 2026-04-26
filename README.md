@@ -22,22 +22,6 @@ The entire RAG pipeline is hand-built — no LangChain, no LlamaIndex — so eve
 
 ---
 
-## 🆕 What's New in Version 2.0
-
-| Feature | v1.0 | v2.0 |
-|---------|------|------|
-| Similarity metric | L2 distance | **Cosine similarity** (better for semantics) |
-| Language support | English-focused | **50+ languages, auto-detected** |
-| Cross-lingual Q&A | ❌ | **✅ Ask in Hindi, get results from English paper** |
-| Citation extraction | ❌ | **✅ Auto-extracts reference section** |
-| Keyword analysis | ❌ | **✅ TF-based frequency chart** |
-| Chunk translation | ❌ | **✅ Translate any chunk via LLM** |
-| Math rendering | Code blocks | **LaTeX via `st.latex()`** |
-| Radar charts | ❌ | **✅ Multi-attribute chunk comparison** |
-| Answer language control | ❌ | **✅ Force answer in any language** |
-
----
-
 ## 🛠️ Technologies / Concepts Used
 
 | Technology | Role |
@@ -59,7 +43,7 @@ The entire RAG pipeline is hand-built — no LangChain, no LlamaIndex — so eve
 ## 🏗️ File Structure
 
 ```
-Version_2/
+research_paper_explainer_bot/
 │
 ├── streamlit_app.py                    ← Main app (7 tabs, multilingual, citations)
 ├── requirements.txt                    ← All dependencies
@@ -81,9 +65,6 @@ streamlit run streamlit_app.py
 # 3. Open http://localhost:8501
 ```
 
-Get a free **Groq API key** at: https://console.groq.com
-
----
 
 ## 🔁 RAG Pipeline (v2.0)
 
@@ -198,5 +179,3 @@ P(wₜ = w | w<t) = exp(zw/τ) / Σw' exp(zw'/τ)
 5. **Streamlit only** — Single `streamlit run` command to deploy. No Docker needed.
 
 ---
-
-*Built as part of 21 Days of LLM Coding challenge.*
