@@ -3,7 +3,7 @@
 
 **Project Title:** Research Paper Explainer Bot — Multilingual RAG from Scratch
 
-**GitHub Repository:** https://github.com/theqxmlkushal/21_Days_of_LLM_coding/blob/master/Research_Paper_Explainer_Bot.ipynb
+**GitHub Repository:**https://github.com/theqxmlkushal/Research-Paper-Explainer-Bot**
 
 ---
 
